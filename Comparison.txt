@@ -1,2 +1,19 @@
 YOLO Realtime Tensorflow
+- 2fps 13fps
+- Tensorflow based
+- Moderately Understandable code
+- Readme 
+
+
+YOLO Realtime Tracking Tensorflow
+- 1.9fps 13fps
+- Tensorflow based + Deep Sort
+- Moderately Understandable code
+- Readme 
+
+
 YOLO Realtime OpenCV
+- 1.3fps 10fps
+- OpenCV DNN based
+- Easily Understandable code
+- Ref (Explanation) : https://www.youtube.com/watch?v=1LCb1PVqzeY&t=2319s

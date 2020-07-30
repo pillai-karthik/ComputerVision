@@ -1,0 +1,9 @@
+Training Custom Data (Wearing Mask or Not) - https://www.youtube.com/watch?v=DLngCtsG3bk&t=83s
+
+
+
+
+
+
+Extras :
+Motion Detection and Tracking Using Opencv Contours - https://www.youtube.com/watch?v=MkcUgPhOlP8&list=PLYwTU_bsf-wQX4foYEiuo4olAPMSz_Ff3&index=2

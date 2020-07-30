@@ -13,8 +13,8 @@ output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 colors = np.random.uniform(0, 255, size=(len(classes), 3))
 
 # Loading image
-#cap = cv2.VideoCapture(0)
-cap = cv2.VideoCapture("video.mp4")
+cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture("video.mp4")
 
 font = cv2.FONT_HERSHEY_PLAIN
 starting_time = time.time()
@@ -64,13 +64,13 @@ while True:
             confidence = confidences[i]
             color = colors[class_ids[i]]
             cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
-            cv2.putText(frame, label + " " + str(round(confidence, 2)), (x, y + 30), font, 3, color, 3)
+            cv2.putText(frame, label + " " + str(round(confidence, 2)), (x, y + 20), font, 2, color, 2)
 
 
 
     elapsed_time = time.time() - starting_time
     fps = frame_id / elapsed_time
-    cv2.putText(frame, "FPS: " + str(round(fps, 2)), (10, 50), font, 4, (0, 0, 0), 3)
+    cv2.putText(frame, "FPS: " + str(round(fps, 2)), (20, 40), font, 2, (255, 255, 255), 2)
     cv2.imshow("Image", frame)
     key = cv2.waitKey(1)
     if key == 27:

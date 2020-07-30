@@ -20,10 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9e04852-7190-4772-99fd-4d71816c76ba" name="Default Changelist" comment="Initial">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Object-Detection-API/data/video/video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Object-Detection-API/data/video/video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLO Realtime OpenCV/real_time_yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/YOLO Realtime OpenCV/real_time_yolo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Comparison.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLO Realtime OpenCV/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLO Realtime OpenCV/walking.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLO Realtime Tensorflow/data/video/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video1.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,10 +134,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.load_weights" />
+      <item itemvalue="Python.real_time_yolo (1)" />
       <item itemvalue="Python.real_time_yolo" />
       <item itemvalue="Python.yolo_object_detection" />
-      <item itemvalue="Python.real_time_yolo (1)" />
-      <item itemvalue="Python.load_weights" />
     </list>
     <recent_temporary>
       <list>
