@@ -29,5 +29,3 @@ YOLO Realtime OpenCV
 - OpenCV DNN based
 - Easily Understandable code
 - Ref (Explanation) : https://www.youtube.com/watch?v=1LCb1PVqzeY&t=2319s
-
-w

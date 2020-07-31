@@ -32,8 +32,9 @@ encoder = gdet.create_box_encoder(model_filename, batch_size=1)
 metric = nn_matching.NearestNeighborDistanceMetric('cosine', max_cosine_distance, nn_budget)
 tracker = Tracker(metric)
 
-vid = cv2.VideoCapture('../data/video5.mp4')
-#vid = cv2.VideoCapture(0)
+#vid = cv2.VideoCapture('../data/video4.mp4')
+#vid = cv2.VideoCapture('http://192.168.0.25:8080/video')#IP WebCam App
+vid = cv2.VideoCapture(0)
 
 codec = cv2.VideoWriter_fourcc(*'XVID')
 vid_fps =int(vid.get(cv2.CAP_PROP_FPS))
@@ -94,9 +95,9 @@ while True:
 
         cv2.rectangle(img, (int(bbox[0]),int(bbox[1])), (int(bbox[2]),int(bbox[3])), color, 2)
         cv2.rectangle(img, (int(bbox[0]), int(bbox[1]-30)), (int(bbox[0])+(len(class_name)
-                    +len(str(track.track_id)))*17, int(bbox[1])), color, -1)
-        cv2.putText(img, class_name+"-"+str(track.track_id), (int(bbox[0]), int(bbox[1]-10)), 0, 0.75,
-                    (255, 255, 255), 2)
+                    +len(str(track.track_id)))*13, int(bbox[1])), color, -1)
+        cv2.putText(img, class_name+"-"+str(track.track_id), (int(bbox[0]), int(bbox[1]-10)), 0, 0.5,
+                    (255, 255, 255), 1)
 
         center = (int(((bbox[0]) + (bbox[2]))/2), int(((bbox[1])+(bbox[3]))/2))
         pts[track.track_id].append(center)
@@ -114,16 +115,16 @@ while True:
         center_y = int(((bbox[1])+(bbox[3]))/2)
 
         if center_y <= int(3*height/6+height/20) and center_y >= int(3*height/6-height/20):
-            if class_name == 'person' or class_name == 'car':
+            if class_name == 'person':# or class_name == 'car':
                 counter.append(int(track.track_id))
                 current_count += 1
 
     total_count = len(set(counter))
-    cv2.putText(img, "Current Vehicle Count: " + str(current_count), (0, 80), 0, 1, (0, 0, 255), 2)
-    cv2.putText(img, "Total Vehicle Count: " + str(total_count), (0,130), 0, 1, (0,0,255), 2)
+    cv2.putText(img, "Band People Count: " + str(current_count), (0, 80), 0, 0.8, (0, 0, 255), 2)
+    cv2.putText(img, "Total People Count: " + str(total_count), (0,130), 0, 0.8, (0,0,255), 2)
 
     fps = 1./(time.time()-t1)
-    cv2.putText(img, "FPS: {:.2f}".format(fps), (0,30), 0, 1, (0,0,255), 2)
+    cv2.putText(img, "FPS: {:.2f}".format(fps), (0,30), 0, 0.8, (0,0,255), 2)
     cv2.resizeWindow('output', 1024, 768)
     cv2.imshow('output', img)
     out.write(img)
