@@ -2,3 +2,4 @@ YOLO Realtime OpenCV/weights/*
 YOLO Realtime Tensorflow/weights/*
 YOLO Realtime Tracking Tensorflow/weights/*
 YOLO Tracking Deep Sort Tensorflow/weights/*
+data/*
