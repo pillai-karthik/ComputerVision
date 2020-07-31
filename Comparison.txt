@@ -1,4 +1,14 @@
+YOLO Tracking Deep Sort Tensorflow
+- Best till now with tracking as well
+- YOLOv3
+- 2fps
+- Tensorflow based + Deep Sort
+- Easily Understandable code
+- Ref (Explanation) : https://www.youtube.com/watch?v=zi-62z-3c4U&t=161s
+
+
 YOLO Realtime Tensorflow
+- YOLOv3
 - 2fps 13fps
 - Tensorflow based
 - Moderately Understandable code
@@ -6,6 +16,7 @@ YOLO Realtime Tensorflow
 
 
 YOLO Realtime Tracking Tensorflow
+- YOLOv3
 - 1.9fps 13fps
 - Tensorflow based + Deep Sort
 - Moderately Understandable code
@@ -13,6 +24,7 @@ YOLO Realtime Tracking Tensorflow
 
 
 YOLO Realtime OpenCV
+- YOLOv3
 - 1.3fps 10fps
 - OpenCV DNN based
 - Easily Understandable code
